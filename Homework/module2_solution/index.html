@@ -13,36 +13,116 @@
 * {
 	box-sizing: border-box;	
 }
+
+
+body {
+	margin: 0;
+	
+}
+
 h1 {
 	text-align: center;
-	font-family: Arial 
-	font-size: 40px;
-	font-color; ##191922
+	font-size: 200%;
+	font-color: #191922;
 }
+
 h2 {
+	display: inline-block;
+	text-align: center;
+	border: 1px solid black;
+	margin: 0px;
 	position: absolute;
-	border: 1px solid black
-	margin: 0;
-	top: 0px;
-	right: 0px;
+    right: -1px;
+    top: -1px;
+    font-size: 150%;
+    padding: 1px;
+    font-family: Arial, Helvetica, sans-serif
+    font-weight: bold;
+    width: 100px;
+    background-color: red;
+    color: #FFF;
+
 }
+/**
+h2 { 
+    display: inline-block;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 125%;
+    width: 150px;
+    text-align: center;
+    margin-top: -13px;
+    margin-bottom: 0;
+    position: absolute;
+    right: -1px;
+    top: 12px; 
+}
+**/
+
+p {
+	padding: 10px;
+	margin: 0;
+	margin-top: 5px;
+}
+
+
+
+
+
+
 .row {
 	width: 100%;
-	margin-top: 0px
+	margin: 0;
+	padding: 15px;
 }
-.class {
-	margin: 0px;
+
+
+
+.container {
 	border: 1px solid black;
-	padding: 5px;
-	display: inline-block;
+	padding: 20px;
 	position: relative;
+	margin: 10px;
+	min-height: 200px;
+	margin-left: auto;
+	background-color: #7F8C8D;
 }
+
+#baseball {
+	background-color: #78281F
+}
+
+#football {
+	background-color: #0b5345
+}
+
+#golf {
+	background-color: #784212
+}
+
+
+/**
+.container {
+    background-color: #ebebeb;
+    border: 1px solid black;
+    position: relative;
+    min-height: 200px;
+    margin-right: 15px;
+    margin-left: auto;
+    margin-bottom: 15px;
+    padding: 20px;
+    padding-top: 35px;
+    box-sizing: border-box;
+    min-width: 300px;
+    overflow: hidden;	
+}
+***/
 
 /*****FOR LARGE DEVICES*****/
 
 @media (min-width: 992px) {
-	.column-lg-3 {
-		width: 25%;
+	.column-lg-4 {
+		width: 33%;
 		float: left;
 		border: 1px
 	}
@@ -50,8 +130,15 @@ h2 {
 
 /*****FOR TABLET DEVICES*****/
 @media (min-width: 768px) and (max-width: 991px) {
-	.column-md-2 {
+	.column-md-6 {
+		margin: auto;
 		width: 50%;
+		float: left;
+		border: 1px;
+	}
+	.column-md-12 {
+		margin: auto;
+		width: 100%;
 		float: left;
 		border: 1px;
 	}
@@ -59,23 +146,27 @@ h2 {
 </style>
 </head>
 <body>
+<h1>meowmeowmeowmeowmeow</h1>
+
 <div class="row">
-	<div class="column-lg-3 column-md-2">
-		<div class="class">
-			<h2>Baseball</h2>
-				<p>etasdglkjasdglkjaslgkjaslgjag</p>
+	<div class="column-lg-4 column-md-6">
+		<div class="container">
+		<h2 id="baseball">Baseball</h2>
+		<p>etasdgl kasdfasdfa sdfasdfasd fasdfasdfa sdfasdf asdfjasd glkja slgk jaslgjag</p>
 		</div>
-		<div class="class">
-				<h2>Football</h2>
-					<p>etasdglkjasdglkjaslgkjaslgjag</p>
-
+	</div>
+	<div class="column-lg-4 column-md-6">	
+		<div class="container">
+		<h2 id="football">Football</h2>
+		<p>etasdg lkjasd asd fasdfa dfasdfas dfasd fasdfa sdfasd fasdfasdfasd fglkja slgkj aslgjag</p>
 		</div>
-		<div class="class">
-			<h2>Golf</h2>
-				<p>etasdglkjasdglkjaslgkjaslgjag</p>
-
+	</div>
+	<div class="column-lg-4 column-md-12">
+		<div class="container">
+		<h2 id="golf">Golf</h2>
+		<p>etas dglkja adfaasdfa sdfa sdf as dfa sdfasdf asdf asdfa sdfasdfasdfsdf asdfa sd fsdglkj asl gk ja slg jag</p>
 		</div>
-	</div>	
+	</div>
 </div>
 </body>
 </html>
